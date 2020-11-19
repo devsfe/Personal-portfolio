@@ -1,0 +1,10 @@
+/* === Navbar === */
+@media(max-width: 600px) {
+    .nav__list {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+    }
+}
