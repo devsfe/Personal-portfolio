@@ -1,10 +1,19 @@
 /* === Navbar === */
 @media(max-width: 600px) {
-    .nav__list {
-        display: none;
+    .bars {
+        right: 30px;
+        top: 40px;
+    }
+}
+
+/* === Home === */
+@media(max-width: 600px) {
+    .home__title {
+        font-size: 26px;
     }
 
-    .bars {
-        display: flex;
+    .home__description {
+        font-size: 14px;
+        max-width: 40ch;
     }
 }
