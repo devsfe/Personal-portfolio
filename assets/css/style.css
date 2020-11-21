@@ -36,17 +36,34 @@ body {
     margin-top: 20px;
 }
 
-/* === Navbar === */
-.nav {
-    position: fixed;
-    padding: 50px 0 0 0;
+/* === Menu === */
+.menu__mobile {
     width: 100%;
-}
-
-.nav__container {
+    height: 100vh;
+    background-color: #141232;
+    position: fixed;
+    z-index: 1;
+    transition: all linear 0.3s;
+    top: -100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.menu__link {
+    line-height: 7ch;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.hidden {
+    top: -100%;
+}
+
+.active {
+    top: 0;   
 }
 
 .bars {
