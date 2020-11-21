@@ -10,10 +10,27 @@
 @media(max-width: 600px) {
     .home__title {
         font-size: 26px;
+        max-width: 20ch;
     }
-
+    
     .home__description {
         font-size: 14px;
-        max-width: 40ch;
+        max-width: 30ch;
+    }
+}
+
+/* === Portfolio === */
+@media(max-width: 800px) {
+    .portfolio__images {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10vw;
+    }
+
+    .portfolio__img {
+        width: 300px;
     }
 }

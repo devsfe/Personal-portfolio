@@ -22,7 +22,7 @@ body {
 
 @media(max-width: 1200px) {
     .spacing-wrapper {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -115,7 +115,6 @@ body {
     background-image: url(/assets/images/background.gif);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .home__title {
@@ -127,6 +126,10 @@ body {
     color: var(--tertiary-color);
     text-align: center;
     max-width: 80ch;
+}
+
+.home__description--2 {
+    color: var(--secondary-color);
 }
 
 .home__icon {
@@ -141,18 +144,66 @@ body {
     transform: translate(0, -8px);
 }
 
-/* === Sec-2 === */
-#sec-2 {
-    width: 100%;
-    height: 100vh;
-    background-color: #bababa;    
+.home__icon--html {
+    color: #F16524;
 }
+
+.home__icon--css {
+    color: #264DE4;
+}
+
+.home__icon--js {
+    color: #F7DF1E;
+}
+
+.home__icon--wordpress {
+    color: #21759B;
+}
+
+.home__icon--bootstrap {
+    color: #553B7D;
+}
+
+.home__icon--sass {
+    color: #CE679A;
+}
+
+/* === Sec-2 === */
+#services {
+    width: 100%;
+    height: auto;
+    background-color: #000002;    
+}
+
+.portfolio__title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0 0 20px 0;
+}
+
+
+.portfolio__images {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__img {
+    object-fit: cover;
+    box-shadow: 5px 5px 5px 0px rgba(46, 46, 46.1);
+    width: 450px;
+    margin-bottom: 40px;
+}
+
 
 
 /* === Animação === */
 [data-anime] {
     opacity: 0;    
-    transition: ease .8s;
+    transition: ease .6s;
+    transition-delay: 0.3s;
 }
 
 [data-anime="left"] {
