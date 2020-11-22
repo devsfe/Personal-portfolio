@@ -36,7 +36,7 @@ var mobileMenu = document.createElement('div');
     var menuList = document.createElement('ul');
     menuList.className = 'menu__list';
     mobileMenu.appendChild(menuList);
-    var linksArray = ["Home", "Sobre", "Portfólio", "Portfolio", "Contato"];
+    var linksArray = ["Home", "Sobre", "Serviços", "Portfolio", "Contato"];
 
     for (var i = 0; i < linksArray.length; i++) {
         var menuItem = document.createElement('li');
@@ -66,7 +66,7 @@ var mobileMenu = document.createElement('div');
 //Colocando link certo em cada "a" tag 
 var menuLinks = document.querySelectorAll('.menu__link');
 
-var linksAttr = ["#home", "#services", "#teste3", "#teste4", "#teste5"];
+var linksAttr = ["#home", "#about", "#teste3", "#teste4", "#teste5"];
 
 menuLinks.forEach(function(item, i){
     item.setAttribute('href', linksAttr[i]);
