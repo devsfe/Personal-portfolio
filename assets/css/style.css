@@ -10,7 +10,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: var(--main-color);
+    background-color: #000002;
+    background-image: url(/assets/images/space.png);
 }
 
 /* === Utilidades/Variáveis === */
@@ -40,7 +41,7 @@ body {
 .menu__mobile {
     width: 100%;
     height: 100vh;
-    background-color: #141232;
+    background-color: #050505;
     position: fixed;
     z-index: 1;
     transition: all linear 0.3s;
@@ -185,18 +186,26 @@ body {
     color: #CE679A;
 }
 
-/* === Sec-2 === */
-#services {
+/* === About === */
+#about {
+    margin-top: 80px;
+}
+
+/* === Portfolio === */
+#portfolio {
+    margin-top: 80px;
     width: 100%;
     height: auto;
-    background-color: #000002;    
 }
 
 .portfolio__title {
     text-align: center;
     color: var(--secondary-color);
     margin: 0 0 20px 0;
+    font-weight: 800;
+    font-style: italic;
 }
+
 
 
 .portfolio__images {

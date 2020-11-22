@@ -36,7 +36,7 @@ var mobileMenu = document.createElement('div');
     var menuList = document.createElement('ul');
     menuList.className = 'menu__list';
     mobileMenu.appendChild(menuList);
-    var linksArray = ["Home", "Sobre", "Empresa", "Portfolio", "Contato"];
+    var linksArray = ["Home", "Sobre", "Portfólio", "Portfolio", "Contato"];
 
     for (var i = 0; i < linksArray.length; i++) {
         var menuItem = document.createElement('li');
@@ -53,6 +53,7 @@ var mobileMenu = document.createElement('div');
 
         menuLink.addEventListener('click', closeMenu);
 
+        //Fechar menu ao clicar em um link
         function closeMenu() {
             mobileMenu.classList.add('hidden');
             mobileMenu.classList.remove('active');
@@ -62,14 +63,14 @@ var mobileMenu = document.createElement('div');
         }
     }
 
-    var menuLinks = document.querySelector('.menu__link');
+//Colocando link certo em cada "a" tag 
+var menuLinks = document.querySelectorAll('.menu__link');
 
-    var linksAttr = ["#teste1", "#teste", "#teste3", "#teste4", "#teste5"];
+var linksAttr = ["#home", "#services", "#teste3", "#teste4", "#teste5"];
 
-    for (var i = 0; i < linksAttr.length; i++) {
-        menuLinks.setAttribute('href', linksAttr[i]);
-        console.log(menuLink);
-    }
+menuLinks.forEach(function(item, i){
+    item.setAttribute('href', linksAttr[i]);
+});
 
 
 //Abrir menu mobile
@@ -84,7 +85,6 @@ function menuMobile(){
 
     }
 };
-
 
 
 //Animate on scroll
