@@ -23,7 +23,7 @@ body {
 
 @media(max-width: 1200px) {
     .spacing-wrapper {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -194,13 +194,13 @@ body {
 
 .about__img {
     border-radius: 100px;
-    border: 2px solid #070724;
+    border: 2px solid rgba(27, 26, 24.3);;
     width: 150px;
     height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about__title {
@@ -219,7 +219,7 @@ body {
 }
 
 .about__hr {
-    margin: 2% auto;
+    margin: 2% auto 80px auto;
     width: 60%;
     color: var(--secondary-color);
     height: 1px;
@@ -228,9 +228,7 @@ body {
 
 /* === Portfolio === */
 #portfolio {
-    margin-top: 80px;
-    width: 100%;
-    height: auto;
+    margin: auto;
 }
 
 .portfolio__title {
@@ -240,26 +238,35 @@ body {
     font-weight: 800;
 }
 
+.portfolio__subtitle {
+    text-align: center;
+    color: var(--secondary-color);    
+    margin: 0 0 40px 0;
+}
+
 .portfolio__images {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
-    
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio__column {
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__img {
     object-fit: cover;
     box-shadow: 5px 5px 5px 0px rgba(46, 46, 46.1);
-    width: 450px;
-    margin-bottom: 40px;
+    width: 420px;
+    max-height: 100%;
+    margin-bottom: 6%;
 }
-
-
 
 /* === Animação === */
 [data-anime] {
     opacity: 0;    
     transition: ease .6s;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 }
 
 [data-anime="left"] {

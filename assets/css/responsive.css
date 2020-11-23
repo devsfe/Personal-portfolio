@@ -23,14 +23,19 @@
 @media(max-width: 800px) {
     .portfolio__images {
         display: grid;
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 400px);
         place-items: center;
         justify-content: center;
         align-items: center;
         grid-gap: 10vw;
     }
 
+    .portfolio__column {
+        display: flex;
+        flex-direction: column;
+    }
+
     .portfolio__img {
-        width: 300px;
+        max-width: 350px;
     }
 }
