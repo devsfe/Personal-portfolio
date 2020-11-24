@@ -28,12 +28,11 @@
     
     .home__description {
         font-size: 14px;
-        max-width: 35ch;
     }
 
     .home__icon {
         font-size: 28px;
-        margin: 20px 0 20px 0;
+        margin: 20px 0 0 10px;
         text-align: center;
     }
 }
