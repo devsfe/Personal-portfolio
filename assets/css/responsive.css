@@ -7,6 +7,19 @@
 }
 
 /* === Home === */
+@media(max-width: 1100px) {
+    .home__title {
+        font-size: 28px;
+        max-width: 40ch;
+    }
+
+    .home__description {
+        font-size: 16px;
+        max-width: 50ch;
+    }
+}
+
+
 @media(max-width: 600px) {
     .home__title {
         font-size: 26px;
@@ -14,13 +27,14 @@
     }
     
     .home__description {
-        font-size: 16px;
-        max-width: 40ch;
+        font-size: 14px;
+        max-width: 35ch;
     }
 
     .home__icon {
         font-size: 28px;
-        margin: 20px 20px 0 0;
+        margin: 20px 0 20px 0;
+        text-align: center;
     }
 }
 
@@ -87,7 +101,7 @@
     }
 
     .site__description {
-        margin-bottom: 20px;  
+        margin-bottom: 0;  
     }
 }
 
@@ -97,6 +111,10 @@
     }
 
     .portfolio__subtitle {
+        font-size: 18px;
+    }
+
+    .site__title {
         font-size: 18px;
     }
 }
