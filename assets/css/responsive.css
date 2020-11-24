@@ -17,13 +17,28 @@
         font-size: 14px;
         max-width: 30ch;
     }
+
+    .home__icon {
+        font-size: 26px;
+    }
+}
+
+/* === About === */
+@media(max-width: 600px) {
+    .about__title {
+        font-size: 22px;
+    }
+
+    .about__paragraph {
+        font-size: 16px;
+    }
 }
 
 /* === Portfolio === */
 @media(max-width: 800px) {
     .portfolio__images {
         display: grid;
-        grid-template-columns: repeat(1, 400px);
+        grid-template-columns: repeat(1, 1fr);
         place-items: center;
         justify-content: center;
         align-items: center;
@@ -33,9 +48,5 @@
     .portfolio__column {
         display: flex;
         flex-direction: column;
-    }
-
-    .portfolio__img {
-        max-width: 350px;
     }
 }
