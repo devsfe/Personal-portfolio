@@ -39,7 +39,7 @@ body {
 .menu__mobile {
     width: 100%;
     height: 100vh;
-    background-color: #16171a;
+    background-color: white#16171a;
     position: fixed;
     z-index: 1;
     transition: all linear 0.3s;
@@ -122,6 +122,9 @@ body {
 
 
 /* === Home === */
+#home {
+
+}
 .home__container {
     width: 100%;
     height: 100vh;
