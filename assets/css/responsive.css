@@ -40,7 +40,7 @@
         letter-spacing: -.01rem;
         max-width: 19.375rem;
         white-space: pre-line;
-        line-height: 1.7;
+        margin: 0 0 40px 0;
     }
 
     .home__icon {
