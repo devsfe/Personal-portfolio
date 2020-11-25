@@ -10,8 +10,8 @@
 body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
-    background-color: #000002;
-    background-image: url(/assets/images/space.png);
+    background-color: #1B1D20;
+    
 }
 
 /* === Utilidades/Variáveis === */
@@ -41,7 +41,7 @@ body {
 .menu__mobile {
     width: 100%;
     height: 100vh;
-    background-color: #050505;
+    background-color: #16171a;
     position: fixed;
     z-index: 1;
     transition: all linear 0.3s;
@@ -126,12 +126,13 @@ body {
 /* === Home === */
 .home__container {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 160px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/images/background.gif);
+    background-color: #1B1D20;
     background-size: cover;
     background-position: center;
 }
@@ -155,7 +156,7 @@ body {
 
 .home__icon {
     font-size: 38px;
-    color: var(--secondary-color);
+    color: #916AEF;
     cursor: pointer;
     margin: 60px 20px 0 0;
     transition: ease 0.3s;
@@ -166,38 +167,15 @@ body {
     transform: translate(0, -8px);
 }
 
-.home__icon--html {
-    color: #F16524;
-}
-
-.home__icon--css {
-    color: #264DE4;
-}
-
-.home__icon--js {
-    color: #F7DF1E;
-}
-
-.home__icon--wordpress {
-    color: #21759B;
-}
-
-.home__icon--bootstrap {
-    color: #553B7D;
-}
-
-.home__icon--sass {
-    color: #CE679A;
-}
-
 /* === About === */
 #about {
-    margin-top: 80px;
+    padding: 60px 0;
+    background-color: #282A2D;
 }
 
 .about__img {
     border-radius: 100px;
-    border: 4px solid rgba(5, 5, 5.3);
+    border: 4px solid #916AEF;
     width: 150px;
     height: 150px;
     display: block;
@@ -210,7 +188,7 @@ body {
     text-align: center;
     color: var(--secondary-color);
     margin: 20px 0 40px 0;
-    font-weight: 800;   
+    font-weight: 300;   
     font-size: 28px; 
 }
 
@@ -230,11 +208,15 @@ body {
 }
 
 /* === Services === */
+.services__container {
+    padding: 80px 0;
+}
+
 .services__title {
     text-align: center;
     color: var(--secondary-color);
     margin: 20px 0 40px 0;
-    font-weight: 800; 
+    font-weight: 300; 
     font-size: 28px;    
 }
 
@@ -242,26 +224,55 @@ body {
     display: grid;
     place-items: center; 
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 0 120px;
 }
 
 .card {
-    background-color: #0D0E0F;
+    background-color: #282A2D;
     border-radius: 6px;
     width: 300px;
     height: 400px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
 }
+
+.card--middle {
+    margin: 0 0 30px 0;
+}
+
+.card__icon {
+    color: #916AEF;
+    font-size: 38px;    
+    margin-bottom: 20px;
+}
+
+.card__icon--mobile {
+    font-size: 28px;
+}
+
+.card__title {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
 /* === Portfolio === */
 #portfolio {
     margin: auto;
+    background-color: #282A2D;
+}
+
+.portfolio__container {
+    padding: 60px 0;    
 }
 
 .portfolio__title {
     text-align: center;
     color: var(--secondary-color);
     margin: 20px 0 40px 0;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 28px; 
 }
 
@@ -270,6 +281,7 @@ body {
     color: var(--secondary-color);    
     margin: 0 0 60px 0;
     font-size: 20px;
+    font-weight: 400;
 }
 
 .portfolio__images {
@@ -284,7 +296,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 2%;
-    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
 }
 
 .site__description {
@@ -300,7 +312,7 @@ body {
 .site__tag {
     color: var(--secondary-color);
     padding: 3px 15px;
-    background-color: #0D0E0F;
+    background-color: #916AEF;
     margin: 0 5px 10px 0;
     border-radius: 5px;
     text-transform: uppercase;
@@ -308,7 +320,8 @@ body {
 }
 
 .site__title {
-    font-size: 24px;
+    font-size: 20px;
+    font-style: italic;
     color: var(--secondary-color);
 }
 
