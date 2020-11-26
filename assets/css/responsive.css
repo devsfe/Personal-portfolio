@@ -52,7 +52,7 @@
 /* === About === */
 @media(max-width: 600px) {
     .about__title {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .about__paragraph {
@@ -88,12 +88,13 @@
 
     .card {
         width: 90%;
+        height: 400px;
     }
 }
 
 @media(max-width: 600px) {
     .services__title {
-        font-size: 22px;        
+        font-size: 24px;        
     }
 }
 
@@ -119,11 +120,11 @@
 
 @media(max-width: 600px) {
     .portfolio__title {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .portfolio__subtitle {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .site__title {
