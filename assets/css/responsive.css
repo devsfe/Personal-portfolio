@@ -37,8 +37,7 @@
     .home__description--2 {
         font-size: 16px;
         letter-spacing: -.01rem;
-        max-width: 19.375rem;
-        white-space: pre-line;                
+        max-width: 19.375rem;               
         margin: 40px 0 40px 0;
         font-weight: 300;
     }
