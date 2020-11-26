@@ -44,7 +44,7 @@
 
     .home__icon {
         font-size: 28px;
-        margin: 30px 0 0 10px;
+        margin: 0 0 0 10px;
         
     }
 }
@@ -58,6 +58,7 @@
     .about__paragraph {
         font-size: 16px;
         letter-spacing: -.01rem;
+        font-weight: 300;
     }
 }
 
