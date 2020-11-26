@@ -76,6 +76,10 @@
 }
 
 @media(max-width: 1000px) {
+    .card--middle {
+        margin: 0;
+    }
+
     .card__container {
         grid-template-columns: repeat(2, 1fr);  
     }
@@ -88,14 +92,29 @@
     }
 
     .card {
-        width: 90%;
-        height: 400px;
+        width: 100%;
     }
 }
 
 @media(max-width: 600px) {
     .services__title {
         font-size: 24px;        
+    }
+
+    .card__icon {
+        font-size: 36px; 
+    }
+
+    .card__icon--mobile {
+        font-size: 24px;
+    }
+
+    .card__title {
+        font-size: 24px;
+    }
+
+    .card__paragraph {
+        font-weight: 300;
     }
 }
 

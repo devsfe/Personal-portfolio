@@ -200,7 +200,7 @@ body {
 }
 
 .about__hr {
-    margin: 2% auto 120px auto;
+    margin: 2% auto 60px auto;
     width: 60%;
     color: var(--secondary-color);
     height: 1px;
@@ -236,7 +236,7 @@ body {
     background-color: #282A2D;
     border-radius: 6px;
     width: 350px;
-    height: 450px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
@@ -266,8 +266,8 @@ body {
 }
 
 .card__paragraph {
-    color: var(--secondary-color);
-    line-height: 2;
+    color: #fae3e1;
+    line-height: 1.8;
 }
 
 /* === Portfolio === */
