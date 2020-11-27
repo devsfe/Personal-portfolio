@@ -26,9 +26,10 @@ body {
 }
 
 :root {
-    --main-color: #121111; 
-    --secondary-color: #fafafa;
-    --tertiary-color: #b8b8b8;
+    --main-bckColor: #121212; 
+    --secondary-bckColor: #212121;
+    --main-fontColor: #f8f8ff;
+    --secondary-fontColor : #dee3de;
 }
 
 .mt20 {
@@ -122,8 +123,20 @@ body {
 
 
 /* === Home === */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
 #home {
-    background-color: #1B1D20;
+    background-color: var(--main-bckColor);
 }
 
 .home__container {
@@ -138,29 +151,30 @@ body {
 }
 
 .home__title {
-    color: var(--secondary-color);
-    font-size: 32px;
+    color: var(--main-fontColor);
+    font-size: 36px;
     text-align: center;
 }
 
 .home__description {
-    color: var(--tertiary-color);
+    color: var(--secondary-fontColor);
     text-align: center;
     max-width: 80ch;
     font-size: 18px;
 }
 
 .home__description--2 {
-    color: var(--secondary-color);
-    margin: 40px 0 0 0;
+    color: var(--main-fontColor);
+    margin: 60px 0 0 0;
     white-space: pre-line; 
     font-style: normal;
+    font-size: 20px;
 }
 
 .home__icon {
     font-size: 38px;
-    color: var(--secondary-color);
-    text-shadow: 4px 8px rgba(40, 42, 45,.75);
+    color: var(--main-fontColor);
+    text-shadow: 2px 2px rgba(40, 42, 45,.75);
     cursor: pointer;
     margin: 60px 20px 0 0;
     transition: ease 0.3s;
@@ -174,7 +188,8 @@ body {
 /* === About === */
 #about {
     padding: 60px 0;
-    background-color: #282A2D;
+    background-color: var(--secondary-bckColor);
+    background-attachment: fixed;
 }
 
 .about__img {
@@ -190,14 +205,14 @@ body {
 
 .about__title {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     margin: 20px 0 40px 0;
     font-weight: normal; 
     font-size: 32px;   
 }
 
 .about__paragraph {
-    color: #fae3e1;    
+    color: var(--main-fontColor);  
     font-size: 18px;
     text-align: center;
     margin: 0 0 30px 0;
@@ -206,14 +221,14 @@ body {
 .about__hr {
     margin: 2% auto 60px auto;
     width: 60%;
-    color: var(--secondary-color);
+    color: var(--main-fontColor);  
     height: 1px;
-    background-color: var(--secondary-color);
+    background-color: var(--main-fontColor);
 }
 
 /* === Services === */
 #services {
-    background-color: #1B1D20;
+    background-color: var(--main-bckColor);
 }
 
 .services__container {
@@ -222,7 +237,7 @@ body {
 
 .services__title {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     margin: 20px 0 60px 0;
     font-weight: normal; 
     font-size: 32px;    
@@ -237,7 +252,7 @@ body {
 }
 
 .card {
-    background-color: #282A2D;
+    background-color: var(--secondary-bckColor);
     border-radius: 6px;
     width: 350px;
     height: auto;
@@ -252,7 +267,7 @@ body {
 }
 
 .card__icon {
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     font-size: 42px;    
     margin-bottom: 20px;
     text-shadow: 3px 6px rgba(27, 29, 32,.75);
@@ -265,19 +280,19 @@ body {
 .card__title {
     font-weight: normal;
     font-size: 28px;
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     margin: 0 0 20px 0;
 }
 
 .card__paragraph {
-    color: #fae3e1;
+    color: var(--secondary-fontColor);
     line-height: 1.8;
 }
 
 /* === Portfolio === */
 #portfolio {
     margin: auto;
-    background-color: #282A2D;
+    background-color: var(--secondary-bckColor);
 }
 
 .portfolio__container {
@@ -286,7 +301,7 @@ body {
 
 .portfolio__title {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     margin: 20px 0 60px 0;
     font-weight: normal; 
     font-size: 32px;   
@@ -294,7 +309,7 @@ body {
 
 .portfolio__subtitle {
     text-align: center;
-    color: var(--secondary-color);    
+    color: var(--main-fontColor);    
     margin: 0 0 40px 0;
     font-size: 24px;
     font-weight: normal;
@@ -303,7 +318,7 @@ body {
 .portfolio__images {
     display: grid;
     grid-gap: 2vw;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .site__img {
@@ -313,6 +328,7 @@ body {
     max-height: 100%;
     margin-bottom: 2%;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
+    border-radius: 4px;
 }
 
 .site__description {
@@ -326,9 +342,9 @@ body {
 }
 
 .site__tag {
-    color: var(--secondary-color);
+    color: var(--main-fontColor);
     padding: 3px 15px;
-    background-color: #1B1D20;
+    background-color: var(--main-bckColor);
     margin: 0 5px 10px 0;
     border-radius: 5px;
     text-transform: uppercase;
@@ -338,7 +354,7 @@ body {
 .site__title {
     font-size: 20px;
     font-style: italic;
-    color: var(--secondary-color);
+    color: var(--secondary-fontColor);
 }
 
 /* === Animação === */
