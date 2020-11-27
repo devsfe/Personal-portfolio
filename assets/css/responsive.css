@@ -47,6 +47,11 @@
         margin: 0 0 0 10px;
         
     }
+
+    .whats__container {
+        right: 15px;
+        bottom: 20px;
+    }
 }
 
 /* === About === */
@@ -75,7 +80,7 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .card--middle {
         margin: 0;
     }
@@ -127,6 +132,7 @@
         justify-content: center;
         align-items: center;
         grid-gap: 10vw;
+        margin: 0 auto;
     }
 
     .portfolio__subtitle {
@@ -138,7 +144,7 @@
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 520px) {
     .portfolio__title {
         font-size: 24px;
     }
@@ -150,4 +156,6 @@
     .site__title {
         font-size: 18px;
     }
+
+    
 }

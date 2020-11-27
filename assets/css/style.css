@@ -48,14 +48,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .menu__link {
     line-height: 7ch;
     text-transform: uppercase;
     font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--secondary-color);
+    font-weight: 200;
+    color: var(--secondary-fontColor);
     display: block;
 }
 
@@ -185,6 +186,27 @@ body {
     transform: translate(0, -8px);
 }
 
+.whats__container {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    background: #61B845;
+    right: 40px;
+    bottom: 20px;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+.whats__icon {
+    color: white;
+    font-size: 28px;
+}
+
 /* === About === */
 #about {
     padding: 60px 0;
@@ -291,7 +313,6 @@ body {
 
 /* === Portfolio === */
 #portfolio {
-    margin: auto;
     background-color: var(--secondary-bckColor);
 }
 
@@ -319,6 +340,14 @@ body {
     display: grid;
     grid-gap: 2vw;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.site__imgContainer {
+    position: relative;
+    width: 100%;
 }
 
 .site__img {
@@ -329,6 +358,36 @@ body {
     margin-bottom: 2%;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
     border-radius: 4px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.site__imgMiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.site__imgContainer:hover .site__img {
+    opacity: 0.3;
+  }
+  
+.site__imgContainer:hover .site__imgMiddle {
+    opacity: 1;
+}
+  
+.site__imgText {
+    background-color: var(--main-bckColor);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 50px;
 }
 
 .site__description {
