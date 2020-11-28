@@ -93,8 +93,6 @@ function animeScroll() {
     dataAnime.forEach(function(e){
         if((topoDoSite) > e.offsetTop) {
             e.classList.add(animate);
-        } else {
-            e.classList.remove(animate);
         }
     });
 }

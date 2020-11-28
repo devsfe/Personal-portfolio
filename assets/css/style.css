@@ -210,7 +210,7 @@ body {
 
 /* === About === */
 #about {
-    padding: 60px 0;
+    padding: 20px 0;
     background-color: var(--secondary-bckColor);
     background-attachment: fixed;
 }
@@ -234,6 +234,17 @@ body {
     font-size: 32px;   
 }
 
+.about__title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 1px;
+    width: 20%;
+    background-color: var(--secondary-fontColor);
+    color: var(--secondary-fontColor);
+}
+
 .about__paragraph {
     color: var(--main-fontColor);  
     font-size: 18px;
@@ -242,7 +253,7 @@ body {
 }
 
 .about__hr {
-    margin: 2% auto 60px auto;
+    margin: 2% auto 0 auto;
     width: 60%;
     color: var(--main-fontColor);  
     height: 1px;
@@ -255,15 +266,26 @@ body {
 }
 
 .services__container {
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .services__title {
     text-align: center;
     color: var(--main-fontColor);
-    margin: 20px 0 60px 0;
+    margin: 20px 0 80px 0;
     font-weight: normal; 
     font-size: 32px;    
+}
+
+.services__title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 1px;
+    width: 15%;
+    background-color: var(--secondary-fontColor);
+    color: var(--secondary-fontColor);
 }
 
 .card__container {
@@ -277,6 +299,7 @@ body {
 .card {
     background-color: var(--secondary-bckColor);
     border-radius: 6px;
+    border-color: 0px 2px 2px 0 var(--secondary-bckColor);
     width: 350px;
     height: auto;
     display: flex;
@@ -286,7 +309,7 @@ body {
 }
 
 .card--middle {
-    margin: 0 0 50px 0;
+    height: 400px;
 }
 
 .card__icon {
@@ -318,7 +341,7 @@ body {
 }
 
 .portfolio__container {
-    padding: 60px 0;    
+    padding: 20px 0;    
 }
 
 .portfolio__title {
