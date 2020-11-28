@@ -31,6 +31,7 @@ body {
     --secondary-bckColor: #212121;
     --main-fontColor: #f8f8ff;
     --secondary-fontColor : #dee3de;
+    -blue: #1319bf;
 }
 
 .mt20 {
@@ -86,7 +87,7 @@ body {
 .bars__burger {
     width: 30px;
     height: 2px;
-    background:  white;
+    background:  var(--main-fontColor);
     border-radius: 20px;
 }
 
@@ -96,7 +97,7 @@ body {
     position: absolute;
     width: 30px;
     height: 2px;
-    background:  white;
+    background:  var(--main-fontColor);
     border-radius: 20px;
     transition: all .3s ease-in-out;
 }
@@ -143,7 +144,7 @@ body {
 
 .home__container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +211,7 @@ body {
 
 /* === About === */
 #about {
-    padding: 20px 0;
+    padding: 60px 0;
     background-color: var(--secondary-bckColor);
     background-attachment: fixed;
 }
@@ -230,19 +231,8 @@ body {
     text-align: center;
     color: var(--main-fontColor);
     margin: 20px 0 40px 0;
-    font-weight: normal; 
+    font-weight: normal;
     font-size: 32px;   
-}
-
-.about__title::after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 0;
-    height: 1px;
-    width: 20%;
-    background-color: var(--secondary-fontColor);
-    color: var(--secondary-fontColor);
 }
 
 .about__paragraph {
@@ -253,7 +243,7 @@ body {
 }
 
 .about__hr {
-    margin: 2% auto 0 auto;
+    margin: 2% auto 80px auto;
     width: 60%;
     color: var(--main-fontColor);  
     height: 1px;
@@ -266,32 +256,21 @@ body {
 }
 
 .services__container {
-    padding: 20px 0;
+    padding: 60px 0 120px 0;
 }
 
 .services__title {
     text-align: center;
     color: var(--main-fontColor);
-    margin: 20px 0 80px 0;
+    margin: 20px 0 60px 0;
     font-weight: normal; 
     font-size: 32px;    
-}
-
-.services__title::after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 0;
-    height: 1px;
-    width: 15%;
-    background-color: var(--secondary-fontColor);
-    color: var(--secondary-fontColor);
 }
 
 .card__container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 1vw;
+    grid-gap: 2vw;
     justify-content: center;
     align-items: center;
 }
@@ -299,17 +278,12 @@ body {
 .card {
     background-color: var(--secondary-bckColor);
     border-radius: 6px;
-    border-color: 0px 2px 2px 0 var(--secondary-bckColor);
     width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
-}
-
-.card--middle {
-    height: 400px;
 }
 
 .card__icon {
@@ -341,7 +315,7 @@ body {
 }
 
 .portfolio__container {
-    padding: 20px 0;    
+    padding: 60px 0;    
 }
 
 .portfolio__title {
@@ -356,9 +330,19 @@ body {
     text-align: center;
     color: var(--main-fontColor);    
     margin: 0 0 40px 0;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
 }
+
+.portfolio__subtitle::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 1px;
+    background-color: var(--secondary-fontColor);
+    color: var(--secondary-fontColor);
+} 
 
 .portfolio__images {
     display: grid;
@@ -366,8 +350,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    margin: 0 0 40px 0;
 }
-
 
 .site__imgContainer {
     position: relative;
@@ -381,7 +365,6 @@ body {
     max-height: 100%;
     margin-bottom: 2%;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
-    border-radius: 4px;
     transition: .5s ease;
     backface-visibility: hidden;
     opacity: 1;
@@ -426,18 +409,50 @@ body {
 
 .site__tag {
     color: var(--main-fontColor);
-    padding: 3px 15px;
+    padding: 3px 10px;
     background-color: var(--main-bckColor);
     margin: 0 5px 10px 0;
     border-radius: 5px;
-    text-transform: uppercase;
     font-size: 12px;
+    letter-spacing: 0.09em;
 }
 
 .site__title {
     font-size: 20px;
-    font-style: italic;
     color: var(--secondary-fontColor);
+}
+
+/* === Contact === */
+#contact {
+    background-color: var(--main-bckColor);
+}
+
+.contact__container {
+    padding: 60px 0;    
+}
+
+.contact__title {
+    text-align: center;
+    color: var(--main-fontColor);
+    margin: 20px 0 80px 0;
+    font-weight: normal; 
+    font-size: 32px;   
+}
+
+.contact__icon {
+    text-align: center;
+}
+
+.contact__subtitle {
+    text-align: center;
+    color: var(--secondary-fontColor);
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+.contact__subtitle--1 {
+    margin: 0 0 40px 0;
+    font-size: 18px;
 }
 
 /* === Animação === */

@@ -78,6 +78,10 @@
     .card__container {
         grid-gap: 2vw;
     }
+
+    .card--middle {
+        margin: 0;
+    }
 }
 
 @media(max-width: 1100px) {
@@ -132,7 +136,6 @@
         justify-content: center;
         align-items: center;
         grid-gap: 10vw;
-        margin: 0 auto;
     }
 
     .portfolio__subtitle {
@@ -158,4 +161,11 @@
     }
 
     
+}
+
+/* === Contact === */
+@media(max-width: 520px) {
+    .contact__title {
+        font-size: 24px;
+    }    
 }
