@@ -13,11 +13,23 @@ body {
     background-color: var(--secondary-bckColor);
 }
 
+h2 {
+    text-align: center;
+    color: var(--main-fontColor);
+    margin: 20px 0 40px 0;
+    font-weight: normal;
+    font-size: 32px;     
+}
+
 /* === Utilidades/Variáveis === */
 .spacing-wrapper {
     width: 75%;
     max-width: 85em;
     margin: 0 auto;
+}
+
+.container {
+    padding: 60px 0;
 }
 
 @media(max-width: 1200px) {
@@ -211,7 +223,6 @@ body {
 
 /* === About === */
 #about {
-    padding: 60px 0;
     background-color: var(--secondary-bckColor);
     background-attachment: fixed;
 }
@@ -225,14 +236,6 @@ body {
     margin-right: auto;
     margin-bottom: 40px;
     object-fit: cover;
-}
-
-.about__title {
-    text-align: center;
-    color: var(--main-fontColor);
-    margin: 20px 0 40px 0;
-    font-weight: normal;
-    font-size: 32px;   
 }
 
 .about__paragraph {
@@ -253,18 +256,7 @@ body {
 /* === Services === */
 #services {
     background-color: var(--main-bckColor);
-}
-
-.services__container {
-    padding: 60px 0 120px 0;
-}
-
-.services__title {
-    text-align: center;
-    color: var(--main-fontColor);
-    margin: 20px 0 60px 0;
-    font-weight: normal; 
-    font-size: 32px;    
+    padding: 0 0 120px 0;
 }
 
 .card__container {
@@ -312,18 +304,6 @@ body {
 /* === Portfolio === */
 #portfolio {
     background-color: var(--secondary-bckColor);
-}
-
-.portfolio__container {
-    padding: 60px 0;    
-}
-
-.portfolio__title {
-    text-align: center;
-    color: var(--main-fontColor);
-    margin: 20px 0 60px 0;
-    font-weight: normal; 
-    font-size: 32px;   
 }
 
 .portfolio__subtitle {
@@ -429,14 +409,6 @@ body {
 
 .contact__container {
     padding: 60px 0;    
-}
-
-.contact__title {
-    text-align: center;
-    color: var(--main-fontColor);
-    margin: 20px 0 80px 0;
-    font-weight: normal; 
-    font-size: 32px;   
 }
 
 .contact__icon {
