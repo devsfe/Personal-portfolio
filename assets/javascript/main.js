@@ -66,7 +66,7 @@ var mobileMenu = document.createElement('div');
 //Colocando link certo em cada "a" tag 
 var menuLinks = document.querySelectorAll('.menu__link');
 
-var linksAttr = ["#home", "#about", "#teste3", "#teste4", "#teste5"];
+var linksAttr = ["#home", "#about", "#services", "#portfolio", "#contact"];
 
 menuLinks.forEach(function(item, i){
     item.setAttribute('href', linksAttr[i]);

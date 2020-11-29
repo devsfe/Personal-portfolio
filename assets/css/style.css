@@ -16,9 +16,9 @@ body {
 h2 {
     text-align: center;
     color: var(--main-fontColor);
-    margin: 20px 0 40px 0;
+    margin: 1.25em 0 2.5em 0;
     font-weight: normal;
-    font-size: 32px;     
+    font-size: 2rem;     
 }
 
 /* === Utilidades/Variáveis === */
@@ -29,7 +29,7 @@ h2 {
 }
 
 .container {
-    padding: 60px 0;
+    padding: 3.75em 0;
 }
 
 @media(max-width: 1200px) {
@@ -47,7 +47,7 @@ h2 {
 }
 
 .mt20 {
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 /* === Menu === */
@@ -167,7 +167,7 @@ h2 {
 
 .home__title {
     color: var(--main-fontColor);
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
 }
 
@@ -175,23 +175,23 @@ h2 {
     color: var(--secondary-fontColor);
     text-align: center;
     max-width: 80ch;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .home__description--2 {
     color: var(--main-fontColor);
-    margin: 60px 0 0 0;
+    margin: 3.75em 0 0 0;
     white-space: pre-line; 
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .home__icon {
-    font-size: 38px;
+    font-size: 2.375rem;
     color: var(--main-fontColor);
     text-shadow: 2px 2px rgba(40, 42, 45,.75);
     cursor: pointer;
-    margin: 60px 20px 0 0;
+    margin: 3.75em 1.25em 0 0;
     transition: ease 0.3s;
     text-align: center;
 }
@@ -218,7 +218,7 @@ h2 {
 
 .whats__icon {
     color: white;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 /* === About === */
@@ -232,21 +232,19 @@ h2 {
     width: 150px;
     height: 150px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: 0 auto 2.5em auto;
     object-fit: cover;
 }
 
 .about__paragraph {
     color: var(--main-fontColor);  
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 1.875em 0;
 }
 
 .about__hr {
-    margin: 2% auto 80px auto;
+    margin: 2% auto 5em auto;
     width: 60%;
     color: var(--main-fontColor);  
     height: 1px;
@@ -256,7 +254,7 @@ h2 {
 /* === Services === */
 #services {
     background-color: var(--main-bckColor);
-    padding: 0 0 120px 0;
+    padding: 0 0 7.5em 0;
 }
 
 .card__container {
@@ -274,30 +272,30 @@ h2 {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 2.5em 1.25em;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
 }
 
 .card--middle {
-    margin: 0 0 60px 0;
+    margin: 0 0 3.75em 0;
 }
 
 .card__icon {
     color: var(--main-fontColor);
-    font-size: 42px;    
-    margin-bottom: 20px;
+    font-size: 2.625rem; 
+    margin: 0 0 1.25em 0;   
     text-shadow: 3px 6px rgba(27, 29, 32,.75);
 }
 
 .card__icon--mobile {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .card__title {
     font-weight: normal;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: var(--main-fontColor);
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25em 0;
 }
 
 .card__paragraph {
@@ -313,8 +311,8 @@ h2 {
 .portfolio__subtitle {
     text-align: center;
     color: var(--main-fontColor);    
-    margin: 0 0 40px 0;
-    font-size: 22px;
+    margin: 0 0 2.5em 0;
+    font-size: 1.375rem;
     font-weight: normal;
 }
 
@@ -334,7 +332,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5em 0;
 }
 
 .site__imgContainer {
@@ -376,7 +374,7 @@ h2 {
 .site__imgText {
     background-color: var(--main-bckColor);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 12px 24px;
     border-radius: 50px;
 }
@@ -384,7 +382,7 @@ h2 {
 .site__description {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;  
+    margin: 0 0 2.5em 0;
 }
 
 .site__tags {
@@ -395,14 +393,14 @@ h2 {
     color: var(--main-fontColor);
     padding: 3px 10px;
     background-color: var(--main-bckColor);
-    margin: 0 5px 10px 0;
+    margin: 0 0.313em 0.625em 0;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 0.09em;
 }
 
 .site__title {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--secondary-fontColor);
 }
 
@@ -412,7 +410,7 @@ h2 {
 }
 
 .contact__container {
-    padding: 60px 0;    
+    padding: 3.75em 0;    
 }
 
 .contact__icon {
@@ -422,13 +420,21 @@ h2 {
 .contact__subtitle {
     text-align: center;
     color: var(--secondary-fontColor);
-    font-size: 16px;
-    margin: 0 0 15px 0;
+    font-size: 1rem;
+    margin: 0 0 0.938em 0;
 }
 
 .contact__subtitle--1 {
-    margin: 0 0 40px 0;
-    font-size: 18px;
+    margin: 0 0 2.5em 0;
+    font-size: 1.125rem;
+}
+
+
+/* === Copy === */
+.copy__paragraph {
+    text-align: center;
+    color: var(--main-fontColor);
+    padding: 2.5em 0;
 }
 
 /* === Animação === */
