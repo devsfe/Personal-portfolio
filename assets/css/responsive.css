@@ -1,5 +1,5 @@
 /* === Navbar === */
-@media(max-width: 600px) {
+@media(max-width: 800px) {
     .bars {
         right: 30px;
         top: 40px;
@@ -9,43 +9,48 @@
 /* === Home === */
 @media(max-width: 800px) {
     .home__title {
-        font-size: 28px;
+        font-size: 1.75rem;
         max-width: 40ch;
     }
 
     .home__description {
-        font-size: 16px;
+        font-size: 1rem;
         max-width: 50ch;
+    }
+
+    .home__icon {
+        font-size: 2rem;
+        margin: 0 0 0 0.625em;
+    }
+
+    .home__description--2 {             
+        margin: 2.5em 0 2.5em 0;
     }
 }
 
-
 @media(max-width: 520px) {
     .home__container {
-        padding: 120px 0;
-        
+        padding: 7.5em 0;  
     }
 
     .home__title {
-        font-size: 26px;
+        font-size: 1.525rem;
     }
 
     .home__description {
-        font-size: 14px;   
+        font-size: 0.875rem;   
     }
     
     .home__description--2 {
-        font-size: 16px;
+        font-size: 1rem;
         letter-spacing: -.01rem;
         max-width: 19.375rem;               
-        margin: 40px 0 40px 0;
         font-weight: 300;
     }
 
     .home__icon {
-        font-size: 28px;
-        margin: 0 0 0 10px;
-        
+        font-size: 1.75rem;
+        margin: 0 0 0 0.625em;
     }
 
     .whats__container {
@@ -54,23 +59,28 @@
     }
 }
 
-/* === About === */
-@media(max-width: 600px) {
-    .about__title {
-        font-size: 24px;
+@media(max-width: 320px) {
+    .home__title
+    .home__icon {
+        font-size: 1.5rem;
     }
 
-    .about__paragraph {
-        font-size: 16px;
-        letter-spacing: -.01rem;
-        font-weight: 300;
+    .home__description--2 {
+        max-width: 16.375rem;               
+    }
+
+    .home__icon {
+        margin: 0 0 0 0.425em;
     }
 }
 
-@media(max-width: 400px) {
+/* === About === */
+@media(max-width: 600px) {
     .about__paragraph {
-        font-size: 16px;
-    }       
+        font-size: 1rem;
+        letter-spacing: -.01rem;
+        font-weight: 300;
+    }
 }
 
 /* === Services === */
@@ -85,10 +95,6 @@
 }
 
 @media(max-width: 1100px) {
-    .card--middle {
-        margin: 0;
-    }
-
     .card__container {
         grid-template-columns: repeat(2, 1fr);  
     }
@@ -106,20 +112,13 @@
 }
 
 @media(max-width: 600px) {
-    .services__title {
-        font-size: 24px;        
-    }
-
     .card__icon {
-        font-size: 36px; 
+        font-size: 2.25rem; 
     }
 
-    .card__icon--mobile {
-        font-size: 24px;
-    }
-
+    .card__icon--mobile,
     .card__title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .card__paragraph {
@@ -139,7 +138,7 @@
     }
 
     .portfolio__subtitle {
-        margin: 0 0 40px 0;
+        margin: 0 0 2.5em 0;
     }
 
     .site__description {
@@ -148,24 +147,18 @@
 }
 
 @media(max-width: 520px) {
-    .portfolio__title {
-        font-size: 24px;
-    }
-
     .portfolio__subtitle {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .site__title {
-        font-size: 18px;
-    }
-
-    
+        font-size: 1.125rem;
+    }    
 }
 
 /* === Contact === */
 @media(max-width: 520px) {
     .contact__title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }    
 }
