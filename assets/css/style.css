@@ -278,6 +278,10 @@ h2 {
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
 }
 
+.card--middle {
+    margin: 0 0 60px 0;
+}
+
 .card__icon {
     color: var(--main-fontColor);
     font-size: 42px;    
