@@ -20,7 +20,7 @@
 
     .home__icon {
         font-size: 2rem;
-        margin: 0 0 0 0.625em;
+        margin: 0 0 0 0.525em;
     }
 
     .home__description--2 {             
@@ -49,8 +49,9 @@
     }
 
     .home__icon {
-        font-size: 1.75rem;
-        margin: 0 0.625em 0 0;
+        font-size: 1.55rem;
+        margin: auto 0.225em;
+        text-align: center;
     }
 
     .whats__container {
@@ -69,9 +70,6 @@
         max-width: 16.375rem;               
     }
 
-    .home__icon {
-        margin: 0 0 0 0.425em;
-    }
 }
 
 /* === About === */
