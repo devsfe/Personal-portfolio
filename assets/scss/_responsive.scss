@@ -29,29 +29,25 @@
 }
 
 @media(max-width: 520px) {
+    .home__text {
+        margin-bottom: 40px;
+    }
+
     .home__container {
-        padding: 7.5em 0;  
+         
+        flex-direction: column;
     }
 
     .home__title {
-        font-size: 1.525rem;
+        font-size: 26px;
     }
 
     .home__description {
-        font-size: 0.875rem;   
+        font-size: 16px;   
     }
     
-    .home__description--2 {
-        font-size: 1rem;
-        letter-spacing: -.01rem;
-        max-width: 19.375rem;               
-        font-weight: 300;
-    }
-
-    .home__icon {
-        font-size: 1.55rem;
-        margin: auto 0.225em;
-        text-align: center;
+    .home__imgContainer {
+        width: 80%;
     }
 
     .whats__container {
