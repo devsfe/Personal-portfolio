@@ -17,7 +17,7 @@ body {
 h2 {
     text-align: center;
     color: var(--main-fontColor);
-    margin: 1.25em 0 2.5em 0;
+    margin: 0 0 40px 0;
     font-weight: normal;
     font-size: 2rem;     
 }
@@ -127,13 +127,13 @@ h2 {
         }
 
         &__title {
-            color: $secondary-fontColor;
+            color: darken($color: #ffffff, $amount: 5);
             font-size: 48px;
             line-height: 1.2;       
         }
 
         &__description {
-            color: $secondary-fontColor;
+            color: darken($color: #ffffff, $amount: 5);
             max-width: 80ch;
             font-size: 28px;
             text-align: center;        
@@ -186,19 +186,18 @@ h2 {
 
 .about__title {
     font-weight: 600;
-    color: #6668F0;
+    color: lighten($color: #000000, $amount: 20);
 }
 
 .about__paragraph {
-    color: #6668F0;
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-align: center;
+    color: lighten($color: #000000, $amount: 25);
+    font-size: 18px;
+    text-align: justify;
     margin: 0 0 1.875em 0;
 }
 
 .about__hr {
-    margin: 2% auto 5em auto;
+    margin: 2% 0 5em 0;
     width: 60%;
     color: var(--main-fontColor);  
     height: 1px;
