@@ -1,0 +1,19 @@
+.spacing-wrapper {
+    width: 80%;
+    max-width: 85em;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 3.75em 0;
+}
+
+@media(max-width: 1200px) {
+    .spacing-wrapper {
+        width: 90%;
+    }
+}
+
+.mt20 {
+    margin-top: 1.25em;
+}
