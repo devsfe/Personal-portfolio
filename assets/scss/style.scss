@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;   
     background-color: var(--secondary-bckColor);
 }
@@ -190,8 +190,9 @@ h2 {
 }
 
 .about__paragraph {
-    color: lighten($color: #6668F0, $amount: 5);  
+    color: #6668F0;
     font-size: 1.125rem;
+    font-weight: 600;
     text-align: center;
     margin: 0 0 1.875em 0;
 }
