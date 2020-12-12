@@ -134,12 +134,11 @@ h2 {
         &__description {
             color: darken($color: #ffffff, $amount: 5);
             max-width: 80ch;
-            font-size: 28px;
-            text-align: center;        
+            font-size: 28px;     
         }
 
         &__imgContainer {
-            width: 40%;          
+            width: 50%;          
         }
 
         &__img {
