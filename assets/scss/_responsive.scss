@@ -8,46 +8,51 @@
 
 /* === Home === */
 @media(max-width: 800px) {
-    .home__title {
-        font-size: 1.75rem;
-        max-width: 40ch;
-    }
+    .home {
 
-    .home__description {
-        font-size: 1rem;
-        max-width: 50ch;
-    }
+        &__title {
+            font-size: 1.75rem;
+            max-width: 40ch;           
+        }
 
-    .home__icon {
-        font-size: 2rem;
-        margin: 0 0 0 0.525em;
-    }
+        &__description {
+            font-size: 1rem;
+            max-width: 50ch;    
+        }
 
-    .home__description--2 {             
-        margin: 2.5em 0 2.5em 0;
+        &__description--2 {
+            margin: 2.5em 0 2.5em 0;    
+        }
+
+        &__icon {
+            font-size: 2rem;
+            margin: 0 0 0 0.525em;    
+        }
     }
 }
 
 @media(max-width: 520px) {
-    .home__text {
-        margin-bottom: 40px;
-    }
+    .home {
 
-    .home__container {
-         
-        flex-direction: column;
-    }
+        &__text {
+            margin-bottom: 40px;    
+        }
 
-    .home__title {
-        font-size: 26px;
-    }
+        &__container {
+            flex-direction: column;    
+        }
 
-    .home__description {
-        font-size: 16px;   
-    }
-    
-    .home__imgContainer {
-        width: 80%;
+        &__title {
+            font-size: 26px;    
+        }
+
+        &__description {
+            font-size: 16px;     
+        }
+
+        &__imgContainer {
+            width: 80%;    
+        }
     }
 
     .whats__container {
@@ -57,15 +62,13 @@
 }
 
 @media(max-width: 320px) {
-    .home__title
-    .home__icon {
-        font-size: 1.5rem;
-    }
+    .home {
 
-    .home__description--2 {
-        max-width: 16.375rem;               
+        &__title,
+        &__icon {
+            font-size: 1.5rem;    
+        }
     }
-
 }
 
 /* === About === */
@@ -78,8 +81,11 @@
 
 /* === Services === */
 @media(max-width: 1300px) {
-    .card__container {
-        grid-gap: 2vw;
+    .card {
+
+        &__container {
+            grid-gap: 2vw;    
+        }
     }
 
     .card--middle {
@@ -94,48 +100,54 @@
 }
 
 @media(max-width: 800px) {
-    .card__container {
-        grid-template-columns: repeat(1, 1fr); 
-        grid-gap: 6vw;   
-    }
-
     .card {
         width: 100%;
+        
+        &__container {
+            grid-template-columns: repeat(1, 1fr); 
+            grid-gap: 6vw;      
+        }
     }
 }
 
 @media(max-width: 600px) {
-    .card__icon {
-        font-size: 2.25rem; 
-    }
+    .card {
 
-    .card__icon--mobile,
-    .card__title {
-        font-size: 1.5rem;
-    }
+        &__icon {
+            font-size: 2.25rem;     
+        }
 
-    .card__paragraph {
-        font-weight: 300;
+        &__icon--mobile,
+        &__title {
+            font-size: 1.5rem;    
+        }
+
+        &__paragraph {
+            font-weight: 300;    
+        }
     }
 }
 
 /* === Portfolio === */
 @media(max-width: 800px) {
-    .portfolio__images {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 10vw;
-    }
+    .portfolio {
 
-    .portfolio__subtitle {
-        margin: 0 0 2.5em 0;
-    }
+        &__images {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 10vw;    
+        }
 
-    .site__description {
-        margin-bottom: 0;  
+        &__subtitle {
+            margin: 0 0 2.5em 0;    
+        }
+
+        &__description {
+            margin-bottom: 0;     
+        }
     }
 }
 
