@@ -116,7 +116,7 @@ h2 {
 /* === Home === */
 .home {
     background-color: #6154F0;
-    padding: 120px 0 60px 0;
+    padding: 120px 0 70px 0;
 
         &__container {
             width: 100%;
@@ -128,17 +128,33 @@ h2 {
         &__title {
             color: darken($color: #ffffff, $amount: 5);
             font-size: 48px;
-            line-height: 1.2;       
+            line-height: 1.2;     
+            margin: 0 0 20px 0;  
         }
 
         &__description {
             color: darken($color: #ffffff, $amount: 5);
-            max-width: 80ch;
-            font-size: 28px;     
+            font-size: 24px;     
+            margin: 0 0 60px 0;
+        }
+
+        &__btn {
+            background-color: darken($color: #6668F0, $amount: 10);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 60px;
+            box-shadow: 0 3px 10px rgba(222, 67, 96,.2);
+            transition: ease 0.2s;
+            margin: 0 20px 0 0;
+        }
+
+        &__btn--2 {
+            background-color: white;
+            color: #6668F0;
         }
 
         &__imgContainer {
-            width: 50%;          
+            width: 60%;          
         }
 
         &__img {
