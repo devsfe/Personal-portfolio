@@ -7,7 +7,7 @@
     <meta name="keywords" content="Criação de Sites Wordpress, Freelancer Websites, Portfólio Desenvolvedor Web, Portfólio Desenvolvedor Front-End">
     <meta name="author" content="Fernando Chaves">
     <title>Fernando Chaves - Desenvolvedor Web</title>
-    <link rel="shortcut icon" href="assets/images/honey-badger.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
     <!-- Estilização -->
     <link rel="stylesheet" href="/assets/css/style.css"> 
@@ -30,19 +30,10 @@
         <div class="home__container spacing-wrapper" class="particles-js">
             <h1 class="home__title" data-anime="bottom">Olá, me chamo Fernando.</h1>
             <p class="home__description" data-anime="bottom">Desenvolvedor web freelancer & Ui/Ux.</p>
-            <p class="home__description home__description--2 mt20" data-anime="bottom">Trabalho com diversas tecnologias e programas mais recentes e sofisticados do mercado. 
-            Continue rolando para baixo para ver um pouco mais do meu trabalho.</p>
-            <div class="home__icons" data-anime="bottom">
-                <i class="fab fa-html5 home__icon"></i>
-                <i class="fab fa-css3-alt home__icon"></i>
-                <i class="fab fa-js home__icon"></i>
-                <i class="fab fa-php home__icon"></i>
-                <i class="fab fa-wordpress home__icon"></i>
-                <i class="fab fa-bootstrap home__icon"></i>
-                <i class="fab fa-sass home__icon"></i>
-            </div>
-            </div>
-        </section>
+            <p class="home__description home__description--2 mt20" data-anime="bottom">Trabalho com diversas tecnologias e programas mais recentes e sofisticados do mercado.Continue rolando para baixo para ver um pouco mais do meu trabalho.</p>
+            <a href="#services" class="home__btn">Saiba mais</a>
+        </div>
+    </section>
     <!-- Whatsapp Icon -->
     <a href="https://api.whatsapp.com/send?phone=5551998857983&text=Ol%C3%A1%20Fernando!%20Gostei%20muito%20do%20seu%20trabalho%20e%20tenho%20interesse%20em%20contrat%C3%A1-lo." class="whats__container"><i class="fab fa-whatsapp whats__icon"></i></a>  
     <!-- Services -->
@@ -51,20 +42,14 @@
             <h2 data-anime="left">Serviços</h2>
             <div class="card__container my-slider-2">
                 <div class="card" data-anime="bottom"> 
-                    <div class="card__iconContainer">
-                        <i class="fas fa-desktop card__icon"></i>  
-                        <i class="fas fa-mobile card__icon card__icon--mobile"></i>  
-                    </div>
                     <h3 class="card__title">Sites compatíveis</h3>   
                     <p class="card__paragraph">Atualmente, é essencial que seu website esteja em todas plataformas. Através de propriedades específicas tornarei seu site compativel com todas plataformas e navegadores disponíveis do mercado.</p>             
                 </div>
                 <div class="card card--middle" data-anime="bottom">
-                    <i class="fas fa-rocket card__icon"></i> 
                     <h3 class="card__title">Site 10x mais rápido!</h3>  
                     <p class="card__paragraph">Seu cliente não tem tempo a perder com um site lento. Com ferramentas de otimização de códigos, imagens e um bom serviço de host, deixarei seu site muito mais rápido.</p>    
                 </div>
                 <div class="card" data-anime="bottom">
-                    <i class="fas fa-code card__icon"></i>
                     <h3 class="card__title">Manutenção de Website</h3>  
                     <p class="card__paragraph">Sites precisam ser constantemente atualizados. Ofereço serviços de troca de host, troca de dominíos e manutenção de diversas tecnologias como Html, Css, Wordpress e Javascript.</p>                     
                 </div>
@@ -100,7 +85,7 @@
             <div class="contact__subtitleContainer" data-anime="bottom"> 
                 <p class="contact__subtitle contact__subtitle--1">Não perca tempo, entre em contato comigo e faça um orçamento hoje mesmo.</p>
                 <p class="contact__subtitle"><i class="far fa-envelope" class="contact__icon"></i> fernando.chaves16@hotmail.com</p>  
-                <p class="contact__subtitle"> <i class="fab fa-instagram"></i> Instagram - @devsfe_1</p>   
+                <p class="contact__subtitle"> <i class="fab fa-instagram"></i> Instagram - @fernandochavesfc</p>   
                 <p class="contact__subtitle"><i class="fab fa-whatsapp contact__icon"></i> Whatsapp - (51)99885-7983 </p>
             </div>           
         </div>
@@ -120,7 +105,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.my-slider').slick({
-  centerMode: false,
+  centerMode: true,
   slidesToShow: 1,
   autoplay: true,
   autoplaySpeed: 3000,

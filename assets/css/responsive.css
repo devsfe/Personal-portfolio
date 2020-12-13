@@ -14,13 +14,9 @@
     }
 
     .home__description {
-        font-size: 1rem;
+        font-size: 16px;
         max-width: 50ch;
-    }
-
-    .home__icon {
-        font-size: 2rem;
-        margin: 0 0 0 0.525em;
+        line-height: 1.4;
     }
 
     .home__description--2 {             
@@ -39,19 +35,22 @@
 
     .home__description {
         font-size: 1rem;   
+        line-height: 1.55;
+        margin: 0 0 20px 0;
     }
     
     .home__description--2 {
-        font-size: 1rem;
-        letter-spacing: -.01rem;
-        max-width: 19.375rem;               
+        font-size: 14px;
+        letter-spacing: -.01rem;              
         font-weight: 300;
+        max-width: 20rem;
+        line-height: 1.55;
+        margin: 0 0 45px 0;
     }
 
-    .home__icon {
-        font-size: 1.55rem;
-        margin: auto 0.225em;
-        text-align: center;
+    .home__btn {
+        padding: 15px 80px;
+        text-align: start;
     }
 
     .whats__container {

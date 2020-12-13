@@ -60,7 +60,7 @@ h2 {
     height: 100vh;
     background-color: #16171a;
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     transition: all linear 0.3s;
     top: -150%;
     display: flex;
@@ -95,7 +95,7 @@ h2 {
     position: fixed;
     border-radius: 20px;
     display: flex;
-    z-index: 2;
+    z-index: 999999;
     right: 60px;
     top: 40px;
 }
@@ -103,7 +103,7 @@ h2 {
 .bars__burger {
     width: 30px;
     height: 2px;
-    background:  var(--main-fontColor);
+    background:  #6154F0;
     border-radius: 20px;
 }
 
@@ -113,7 +113,7 @@ h2 {
     position: absolute;
     width: 30px;
     height: 2px;
-    background:  var(--main-fontColor);
+    background:  #6154F0;
     border-radius: 20px;
     transition: all .3s ease-in-out;
 }
@@ -171,36 +171,36 @@ h2 {
 
 .home__title {
     color: var(--main-fontColor);
-    font-size: 2.25rem;
+    font-size: 2.35rem;
     text-align: center;
 }
 
 .home__description {
-    color: var(--secondary-fontColor);
+    color: var(--main-fontColor);
     text-align: center;
     max-width: 80ch;
-    font-size: 1.125rem;
+    font-size: 1.225rem;
+    margin: 0 0 40px 0;
 }
 
 .home__description--2 {
-    color: var(--main-fontColor);
-    margin: 3.75em 0 0 0;
-    white-space: pre-line; 
-    font-style: normal;
-    font-size: 1.25rem;
+    color: var(--secondary-fontColor);
+    font-style: italic;
+    font-size: 18px;
+    max-width: 40rem;
 }
 
-.home__icon {
-    font-size: 2.375rem;
-    color: var(--main-fontColor);
-    cursor: pointer;
-    margin: 2.75em 0.45em 0 0;
-    transition: ease 0.3s;
-    text-align: center;
-}
-
-.home__icon:hover {
-    transform: translate(0, -8px);
+.home__btn {
+    border-radius: 4px; 
+    font-size: 1.125rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    color: #fff;
+    background-color: #6154F0;
+    z-index: 99999;
 }
 
 .whats__container {
@@ -249,9 +249,10 @@ h2 {
 .about__hr {
     margin: 2% auto 5em auto;
     width: 60%;
-    color: var(--main-fontColor);  
+    color: #6154F0;  
     height: 1px;
-    background-color: var(--main-fontColor);
+    background-color: #6154F0;
+    border: none;
 }
 
 /* === Services === */
@@ -273,24 +274,14 @@ h2 {
 }
 
 .card {
-    background-color: #262424;
+    background-color: #1B1D20;
     border-radius: 6px;
     width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
     padding: 2.5em 1.25em;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);   
-}
-
-.card__icon {
-    color: var(--main-fontColor);
-    font-size: 2.625rem; 
-    margin: 0 0 0 10px;  
-}
-
-.card__icon--mobile {
-    font-size: 1.75rem;
+    box-shadow: 4px 4px 1px  rgba(97, 84, 240.5);   
 }
 
 .card__title {
@@ -298,11 +289,13 @@ h2 {
     font-size: 1.75rem;
     color: var(--main-fontColor);
     margin: 0 0 1.25em 0;
+    text-align: center;
 }
 
 .card__paragraph {
     color: var(--secondary-fontColor);
     line-height: 1.8;
+    text-align: center;
 }
 
 /* === Portfolio === */
@@ -323,9 +316,9 @@ h2 {
     display: block;
     margin: 0 auto;
     width: 15%;
-    height: 1px;
-    background-color: var(--secondary-fontColor);
-    color: var(--secondary-fontColor);
+    height: 2px;
+    background-color: #6154F0;
+    color: #6154F0;
 } 
 
 .portfolio__images {
