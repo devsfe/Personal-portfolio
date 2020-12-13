@@ -7,10 +7,14 @@
     <meta name="keywords" content="Criação de Sites Wordpress, Freelancer Websites, Portfólio Desenvolvedor Web, Portfólio Desenvolvedor Front-End">
     <meta name="author" content="Fernando Chaves">
     <title>Fernando Chaves - Desenvolvedor Web</title>
-    <link rel="shortcut icon" href="assets/images/logo-2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/honey-badger.png" type="image/x-icon">
 
     <!-- Estilização -->
     <link rel="stylesheet" href="/assets/css/style.css"> 
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
 
     <!-- Bibliotecas CSS -->
     <script src="https://kit.fontawesome.com/6465650075.js" crossorigin="anonymous"></script>
@@ -21,39 +25,31 @@
         <div class="bars__burger"></div>
     </div>
     <!-- Home -->  
-    <section class="home" id="home">
-        <div class="home__container spacing-wrapper">
-            <div class="home__text">
-                <h1 class="home__title" data-anime="bottom">Olá, me chamo Fernando.</h1>
-                <p class="home__description" data-anime="bottom">Eu crio e faço a manutenção de websites casuais e profissionais.</p>
-                <a href="" class="home__btn" data-anime="bottom">Saber Mais</a>
-                <a href="" class="home__btn home__btn--2" data-anime="bottom">Contato</a>
+    <section id="home">
+        <div id = "particles-js"></div>
+        <div class="home__container spacing-wrapper" class="particles-js">
+            <h1 class="home__title" data-anime="bottom">Olá, me chamo Fernando.</h1>
+            <p class="home__description" data-anime="bottom">Desenvolvedor web freelancer & Ui/Ux.</p>
+            <p class="home__description home__description--2 mt20" data-anime="bottom">Trabalho com diversas tecnologias e programas mais recentes e sofisticados do mercado. 
+            Continue rolando para baixo para ver um pouco mais do meu trabalho.</p>
+            <div class="home__icons" data-anime="bottom">
+                <i class="fab fa-html5 home__icon"></i>
+                <i class="fab fa-css3-alt home__icon"></i>
+                <i class="fab fa-js home__icon"></i>
+                <i class="fab fa-php home__icon"></i>
+                <i class="fab fa-wordpress home__icon"></i>
+                <i class="fab fa-bootstrap home__icon"></i>
+                <i class="fab fa-sass home__icon"></i>
             </div>
-            <div class="home__imgContainer">
-                <img src="assets/images/home-img.svg" alt="" class="home__img" data-anime="left">
             </div>
-        </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#6668F0" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,133.3C384,139,480,117,576,122.7C672,128,768,160,864,144C960,128,1056,64,1152,58.7C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-    </svg>
-    <!-- Whatsapp Icon -->
-    <a href="https://api.whatsapp.com/send?phone=5551998857983&text=Ol%C3%A1%20Fernando!%20Gostei%20muito%20do%20seu%20trabalho%20e%20tenho%20interesse%20em%20contrat%C3%A1-lo." class="whats__container"><i class="fab fa-whatsapp whats__icon"></i></a>   
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container spacing-wrapper">
-            <h2 class="about__title" data-anime="left">Quem é Fernando Chaves?</h2>
-            <img src="/assets/images/eu.webp" alt="" class="about__img" data-anime="left">
-            <p class="about__paragraph" data-anime="bottom">Estava no último ano do ensino médio quando percebi meu amor por programação e códigos. Após concluir o ensino básico, ingressei na faculdade de Ensino superior Estácio, onde curso atualmente Análise e Desenvolvimento de Sistemas(2° Periodo).</p>
-            <p class="about__paragraph" data-anime="bottom">Atravessando lógica de programação e diversos cursos, amei o Front-End e decidi que daria meu melhor para sempre fazer um ótimo trabalho.</p>
-            <hr class="about__hr" data-anime="top">
-        </div>
         </section>
+    <!-- Whatsapp Icon -->
+    <a href="https://api.whatsapp.com/send?phone=5551998857983&text=Ol%C3%A1%20Fernando!%20Gostei%20muito%20do%20seu%20trabalho%20e%20tenho%20interesse%20em%20contrat%C3%A1-lo." class="whats__container"><i class="fab fa-whatsapp whats__icon"></i></a>  
     <!-- Services -->
     <section id="services">
         <div class="container spacing-wrapper">
             <h2 data-anime="left">Serviços</h2>
-            <div class="card__container">
+            <div class="card__container my-slider-2">
                 <div class="card" data-anime="bottom"> 
                     <div class="card__iconContainer">
                         <i class="fas fa-desktop card__icon"></i>  
@@ -74,130 +70,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+    <!-- About -->
+    <section id="about">
+        <div class="container spacing-wrapper">
+            <h2 data-anime="left">Sobre mim</h2>
+            <img src="/assets/images/eu.webp" alt="" class="about__img" data-anime="left">
+            <p class="about__paragraph" data-anime="bottom">Estava no último ano do ensino médio quando percebi meu amor por programação e códigos. Após concluir o ensino básico, ingressei na faculdade de Ensino superior Estácio, onde curso atualmente Análise e Desenvolvimento de Sistemas(2° Periodo).</p>
+            <p class="about__paragraph" data-anime="bottom">Atravessando lógica de programação e diversos cursos, amei o Front-End e decidi que daria meu melhor para sempre fazer um ótimo trabalho.</p>
+            <hr class="about__hr" data-anime="top">
+        </div>
+        </section>
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <section id="portfolio">
         <div class="container spacing-wrapper">
             <h2 data-anime="left">Portfólio</h2>
             <h3 class="portfolio__subtitle" data-anime="left">Sites Profissionais</h3>
-            <div class="portfolio__images">
-                <div class="site" data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/express-shop.webp" alt=""
-                        class="site__img">
-                        <div class="site__middle">
-                            <a href="https://expresshop.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                        </div>
-                        <p class="site__title">Express Shop</p>
-                    </div>
-                </div>  
-                <div class="site" data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/soul.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://soulwebsite.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                        </div>
-                        <p class="site__title">Soul</p>
-                    </div>
-                </div> 
-                <div class="site" data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/next-bar.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://nextbar.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                            <div class="site__tag">Figma</div>
-                        </div>
-                        <p class="site__title">Next Bar</p>
-                    </div>
-                </div>
-                <div class="site"  data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/cafeteria-blog.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://cafeteriablog.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                        </div>
-                        <p class="site__title">Cafeteria Blog</p>
-                    </div>
-                </div>
-                <div class="site"  data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/responsive-css-website.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://theastronaut.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                        </div>
-                        <p class="site__title">Astronaut</p>
-                    </div>
-                </div>
-            </div>
-            <h3 class="portfolio__subtitle" data-anime="left">Projetos Independentes</h3>
-            <div class="portfolio__images">
-                <div class="site"  data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/tasklistjs.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://jstasklist.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                            <div class="site__tag">Javascript</div>
-                        </div>
-                        <p class="site__title">Lista de Tarefas</p>
-                    </div>
-                    </div>
-                <div class="site"  data-anime="bottom">
-                    <div class="site__container">
-                        <img src="/assets/images/cardcarouseljs.webp" alt="" class="site__img">
-                        <div class="site__middle">
-                            <a href="https://cardcarouseljs.netlify.app/" class="site__text">Visitar Site</a>
-                        </div>
-                    </div>
-                    <div class="site__description">
-                        <div class="site__tags">
-                            <div class="site__tag">Html</div>
-                            <div class="site__tag">Css</div>
-                            <div class="site__tag">Javascript</div>
-                        </div>
-                        <p class="site__title">Carrousel de Cartas</p>
-                    </div>
-                </div>
+            <div class="portfolio__images my-slider">
+                <img src="assets/images/express-shop.webp" alt="" class="portfolio__img"> 
+                <img src="assets/images/next-bar.webp" alt="" class="portfolio__img">     
+                <img src="assets/images/soul.webp" alt="" class="portfolio__img">           
             </div>
         </div>  
     </section>  
     <!-- Contact --> 
-    <section class="contact" id="contact">
+    <section id="contact">
         <div class="contact__container spacing-wrapper">
             <h2 data-anime="left">Contato</h2>  
             <div class="contact__subtitleContainer" data-anime="bottom"> 
@@ -217,5 +114,40 @@
     <script src="/assets/javascript/particles.js"></script>
     <script src="/assets/javascript/app.js"></script>
     <script src="/assets/javascript/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.my-slider').slick({
+  centerMode: false,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: false,
+        dots: true,
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
+
+
+        }); 
+    </script>
 </body>
 </html>
