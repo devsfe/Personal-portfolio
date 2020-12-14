@@ -8,51 +8,58 @@
 
 /* === Home === */
 @media(max-width: 800px) {
-    .home__title {
-        font-size: 1.75rem;
-        max-width: 40ch;
-    }
+    .home {
 
-    .home__description {
-        font-size: 16px;
-        max-width: 50ch;
-        line-height: 1.4;
-    }
+        &__title {
+            font-size: 1.75rem;
+            max-width: 40ch;    
+        }
 
-    .home__description--2 {             
-        margin: 2.5em 0 2.5em 0;
+        &__description {
+            font-size: 16px;
+            max-width: 50ch;
+            line-height: 1.4;   
+        }
+
+        &__paragraph {
+            margin: 0 0 2.5em 0;    
+            max-width: 40rem;
+        }
     }
 }
 
 @media(max-width: 520px) {
-    .home__container {
-        padding: 7.5em 0;  
-    }
+    .home {
 
-    .home__title {
-        font-size: 1.525rem;
-    }
+        &__container {
+            padding: 7.5em 0;      
+        }
 
-    .home__description {
-        font-size: 1rem;   
-        line-height: 1.55;
-        margin: 0 0 20px 0;
+        &__title {
+            font-size: 1.525rem;    
+        }
+
+        &__description {
+            font-size: 1rem;   
+            line-height: 1.55;
+            margin: 0 0 90px 0;    
+        }
+
+        &__paragraph {
+            font-size: 16px;
+            letter-spacing: -.01rem;              
+            font-weight: 300;
+            max-width: 20rem;
+            line-height: 1.55;
+            margin: 0 0 40px 0;    
+        }
+
+        &__btn {
+            padding: 15px 60px;
+            text-align: start;    
+        }
     }
     
-    .home__description--2 {
-        font-size: 14px;
-        letter-spacing: -.01rem;              
-        font-weight: 300;
-        max-width: 20rem;
-        line-height: 1.55;
-        margin: 0 0 45px 0;
-    }
-
-    .home__btn {
-        padding: 15px 60px;
-        text-align: start;
-    }
-
     .whats__container {
         right: 15px;
         bottom: 20px;
@@ -137,17 +144,22 @@
     }
 
     .portfolio__images {
-        width: 100%;
+        
     }
     
     .img__container {
-        margin: 0 10px 60px 10px;
+        margin: 0;
         width: 100%;
+        max-width: 90%;
     }
 
     .img__description {
         max-width: 100%;
         font-size: 14px;
+    }
+
+    .img {
+        width: 100%;
     }
 
 }
