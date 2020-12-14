@@ -141,12 +141,14 @@
     }
     
     .img__container {
-        margin: 0 10px 80px 10px;
+        margin: 0 10px 150px 10px;
     }
 
     .img__description {
         max-width: 100%;
+        font-size: 14px;
     }
+
 }
 
 /* === Contact === */
