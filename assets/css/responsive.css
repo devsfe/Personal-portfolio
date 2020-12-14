@@ -125,9 +125,6 @@
 
 /* === Portfolio === */
 @media(max-width: 800px) {
-    .portfolio__images {
-        
-    }
 
     .portfolio__subtitle {
         margin: 0 0 2.5em 0;
@@ -143,10 +140,12 @@
         width: 100%;
     }
     
-    .portfolio__img {
-        width: auto;
-        height: 600px;
-        margin: 0 5px 30px 5px;
+    .img__container {
+        margin: 0 10px 80px 10px;
+    }
+
+    .img__description {
+        max-width: 30rem;
     }
 }
 
