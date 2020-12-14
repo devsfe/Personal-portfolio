@@ -141,7 +141,8 @@
     }
     
     .img__container {
-        margin: 0 10px 150px 10px;
+        margin: 0 10px 60px 10px;
+        width: 100%;
     }
 
     .img__description {
