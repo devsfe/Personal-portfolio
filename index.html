@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/6465650075.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <!-- Navbar -->              
+    <!-- Navbar -->   
     <div class="bars">
         <div class="bars__burger"></div>
     </div>
@@ -38,7 +38,7 @@
     <!-- Services -->
     <section id="services">
         <div class="container spacing-wrapper">
-            <h2 data-anime="left">Ferramentas & Serviços</h2>
+            <h2 data-anime="left">/Ferramentas & Serviços</h2>
             <div class="card__container my-slider-2">
                 <div class="card" data-anime="bottom"> 
                     <h3 class="card__title">SEO</h3>  
@@ -78,7 +78,7 @@
     <!-- About -->
     <section id="about" class="about">
         <div class="container spacing-wrapper">
-            <h2 data-anime="left">Sobre</h2>
+            <h2 class="about__title" data-anime="left">/Sobre</h2>
             <img src="/assets/images/eu.webp" alt="" class="about__img" data-anime="left">
             <p class="about__paragraph" data-anime="bottom">Estava no último ano do ensino médio quando percebi meu amor por programação e códigos. Após concluir o ensino básico, ingressei na faculdade de Ensino superior Estácio, onde curso atualmente Análise e Desenvolvimento de Sistemas(2° Periodo).</p>
             <p class="about__paragraph" data-anime="bottom">Atravessando lógica de programação e diversos cursos, amei o Front-End e decidi que daria meu melhor para sempre fazer um ótimo trabalho.</p>
@@ -88,28 +88,27 @@
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="container spacing-wrapper">
-            <h2 data-anime="left">Portfólio</h2>
-            <h3 class="portfolio__subtitle" data-anime="left">Sites Profissionais</h3>
+            <h2 data-anime="left">/Portfólio</h2>
             <div class="portfolio__images my-slider">
                 <div class="img__container">
                     <img src="assets/images/express-shop.webp" alt="" class="img"> 
                     <h3 class="img__title">Express Shop</h3>
-                    <p class="img__description">E-commerce fictícia focada no ramo de roupas. Acesse em <a href="https://expresshop.netlify.app/" class="img__link">https://expresshop.netlify.app/</a></p>
+                    <p class="img__description">E-commerce fictícia focada no ramo de roupas. <br><a href="https://expresshop.netlify.app/" class="img__btn">Acessar Site</a></p>
                 </div>
                 <div class="img__container">
                     <img src="assets/images/next-bar.webp" alt="" class="img"> 
                     <h3 class="img__title">Next Bar</h3>
-                    <p class="img__description">Site com a temática bar, construido usando apenas Html, CSS & Figma. Acesse em <a href="https://nextbar.netlify.app/" class="img__link">https://nextbar.netlify.app/</a></p>
+                    <p class="img__description">Site com a temática bar, construido usando apenas Html, CSS & Figma. <br><a href="https://nextbar.netlify.app/" class="img__btn">Acessar Site</a></p>
                 </div>    
                 <div class="img__container">
                     <img src="assets/images/soul.webp" alt="" class="img">
                     <h3 class="img__title">Soul</h3>
-                    <p class="img__description">Landing page fictícia de uma empresa focada em soluções tecnológicas. Acesse em <a href="https://soulwebsite.netlify.app/" class="img__link">https://soulwebsite.netlify.app/</a></p>
+                    <p class="img__description">Landing page fictícia de uma empresa focada em soluções tecnológicas. <br><a href="https://soulwebsite.netlify.app/" class="img__btn">Acessar Site</a></p>
                 </div>
                 <div class="img__container">
                     <img src="assets/images/heat-page.png" alt="" class="img">
                     <h3 class="img__title">Heat</h3>
-                    <p class="img__description">Landing page fictícia de uma empresa focada em criação de Landing pages. Acesse em <a href="https://heatpage.netlify.app/" class="img__link">https://heatpage.netlify.app/</a></p>
+                    <p class="img__description">Landing page fictícia de uma empresa focada em criação de Landing pages. <br><a href="https://heatpage.netlify.app/" class="img__btn">Acessar Site</a></p>
                 </div>             
             </div>
         </div>  
@@ -117,7 +116,7 @@
     <!-- Contact --> 
     <section class="contact" id="contact">
         <div class="contact__container spacing-wrapper">
-            <h2 data-anime="left">Contato</h2>  
+            <h2 data-anime="left">/Contato</h2>  
             <div class="contact__subtitleContainer" data-anime="bottom"> 
                 <p class="contact__subtitle contact__subtitle--1">Não perca tempo, entre em contato comigo e faça um orçamento hoje mesmo.</p>
                 <p class="contact__subtitle"><i class="far fa-envelope contact__icon"></i> fernando.chaves16@hotmail.com</p>  
@@ -142,7 +141,8 @@
         $(document).ready(function(){
             $('.my-slider').slick({
                 centerMode: true,
-                slidesToShow: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
                 dots: true,
                 arrows: false,
                 autoplay: true,

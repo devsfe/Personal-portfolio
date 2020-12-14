@@ -184,11 +184,13 @@ h2 {
 
     &__paragraph {
         color: #b0b2b3;
-        font-size: 18px;
+        font-size: 16px;
         font-style: italic;
         max-width: 30rem;
         margin: 0 0 40px 0;   
-        text-align: center;   
+        text-align: center;  
+        font-family: "IBMPlexMonoItalic", monospace;
+        letter-spacing: -.09rem; 
     }
 
     &__btn {
@@ -354,17 +356,34 @@ h2 {
         margin: 0 auto;    
     }
 
+    .my-slider .slide.slick-center {
+        transform: scale(1);
+    }
+
+
     .img {
-        border-radius: 4px;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
-        object-fit: cover;
-        width: 100%;
-        margin: 0 0 15px 0;  
+        width: 90%;
+        margin: 0 auto 15px auto;  
 
         &__container {
-            width: 100%;
-            display: block;
-            margin: 0 30px 60px 30px;    
+            width: 80%;
+            margin: 0 20px 60px 20px;   
+            background-color: #131417;
+            box-shadow: 0 4px 3px 0 rgba(0,0,0,0.4);
+            padding: 20px 40px;
+            border-radius: 6px;
+            height: 400px;
+        }
+
+        &__container:hover {
+            cursor: move;
+            cursor: -webkit-grab;
+            cursor: grab;
+        }
+
+        &__container:focus {
+            outline: none;
         }
         
         &__title {
@@ -376,14 +395,31 @@ h2 {
 
         &__description {
             text-align: center;
-            font-style: italic;
             max-width: 40rem;
-            margin: 0 auto;
+            margin: 0 auto 120px auto;
             color: var(--secondary-fontColor);    
+
         }
 
-        &__link {
-            color: #AA88FF;    
+        &__btn {
+            border-radius: 4px; 
+            font-size: 16px;
+            font-family: "Rubik", sans-serif;
+            font-weight: normal;
+            line-height: 1.2;
+            padding: 15px 15px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+            color: #fff;
+            background-color: #6154F0;
+            z-index: 99999; 
+            width: 150px;
+            display: block;  
+            margin: 20px auto;
+            transition: ease 0.2s;
+        }
+
+        &__btn:hover {
+            background-color: darken($color: #6154F0, $amount: 20);
         }
     }
 }
@@ -393,7 +429,7 @@ h2 {
     background-color: var(--main-bckColor);    
 
     &__container {
-        padding: 3.75em 0;      
+        padding: 3.75em 0;    
     }
 
     &__icon {
