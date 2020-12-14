@@ -187,7 +187,7 @@ h2 {
     color: var(--secondary-fontColor);
     font-style: italic;
     font-size: 18px;
-    max-width: 40rem;
+    max-width: 30rem;
 }
 
 .home__btn {
@@ -281,21 +281,51 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 2.5em 1.25em;
-    box-shadow: 4px 4px 1px  rgba(97, 84, 240.5);   
+    box-shadow: 0 4px 3px 0 rgba(0,0,0,0.4);
 }
 
 .card__title {
     font-weight: normal;
     font-size: 1.75rem;
-    color: var(--main-fontColor);
+    color: #fff;
     margin: 0 0 1.25em 0;
     text-align: center;
 }
 
-.card__paragraph {
-    color: var(--secondary-fontColor);
-    line-height: 1.8;
-    text-align: center;
+.card__list {
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #b0b2b3;
+    margin-bottom: 1.25rem;
+}
+
+.card__description {
+    padding: 0.375rem 0;
+}
+
+.card__description::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #6154F0; 
+    border-radius: 50%;
+    border: 2px solid #0E1013;
+    margin-right: 0.625rem;
+    position: relative;
+    top: -1px;
+}
+
+.card__description::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.05);
+    margin-top: 0.625rem;
+    position: relative;
 }
 
 /* === Portfolio === */

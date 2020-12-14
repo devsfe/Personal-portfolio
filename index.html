@@ -29,9 +29,9 @@
         <div id = "particles-js"></div>
         <div class="home__container spacing-wrapper" class="particles-js">
             <h1 class="home__title" data-anime="bottom">Olá, me chamo Fernando.</h1>
-            <p class="home__description" data-anime="bottom">Desenvolvedor web freelancer & Ui/Ux.</p>
-            <p class="home__description home__description--2 mt20" data-anime="bottom">Trabalho com diversas tecnologias e programas mais recentes e sofisticados do mercado.Continue rolando para baixo para ver um pouco mais do meu trabalho.</p>
-            <a href="#services" class="home__btn">Saiba mais</a>
+            <p class="home__description" data-anime="bottom">Sou desenvolvedor Front-end & UI/UX freelancer.</p>
+            <p class="home__description home__description--2 mt20" data-anime="bottom">"Trabalho com diversas tecnologias e programas mais recentes e sofisticados do mercado.Continue rolando para baixo para ver um pouco mais do meu trabalho."</p>
+            <a href="#services" class="home__btn" data-anime="bottom">Saiba mais</a>
         </div>
     </section>
     <!-- Whatsapp Icon -->
@@ -39,19 +39,37 @@
     <!-- Services -->
     <section id="services">
         <div class="container spacing-wrapper">
-            <h2 data-anime="left">Serviços</h2>
+            <h2 data-anime="left">Ferramentas & Serviços</h2>
             <div class="card__container my-slider-2">
                 <div class="card" data-anime="bottom"> 
-                    <h3 class="card__title">Sites compatíveis</h3>   
-                    <p class="card__paragraph">Atualmente, é essencial que seu website esteja em todas plataformas. Através de propriedades específicas tornarei seu site compativel com todas plataformas e navegadores disponíveis do mercado.</p>             
+                    <h3 class="card__title">SEO</h3>  
+                    <ul class="card__list">
+                        <li class="card__description">Google Analytics</li> 
+                        <li class="card__description">Google Search Console</li> 
+                        <li class="card__description">KingHost</li> 
+                        <li class="card__description">Keyword Explorer</li> 
+                        <li class="card__description">WooRank</li> 
+                    </ul>         
                 </div>
                 <div class="card card--middle" data-anime="bottom">
-                    <h3 class="card__title">Site 10x mais rápido!</h3>  
-                    <p class="card__paragraph">Seu cliente não tem tempo a perder com um site lento. Com ferramentas de otimização de códigos, imagens e um bom serviço de host, deixarei seu site muito mais rápido.</p>    
-                </div>
+                    <h3 class="card__title">Tecnologias</h3>   
+                    <ul class="card__list">
+                        <li class="card__description">Html & CSS</li> 
+                        <li class="card__description">SASS & SCSS</li> 
+                        <li class="card__description">Bootstrap</li> 
+                        <li class="card__description">Javascript</li> 
+                        <li class="card__description">Wordpress</li> 
+                    </ul>     
+                </div> 
                 <div class="card" data-anime="bottom">
-                    <h3 class="card__title">Manutenção de Website</h3>  
-                    <p class="card__paragraph">Sites precisam ser constantemente atualizados. Ofereço serviços de troca de host, troca de dominíos e manutenção de diversas tecnologias como Html, Css, Wordpress e Javascript.</p>                     
+                    <h3 class="card__title">Design</h3>  
+                    <ul class="card__list">
+                        <li class="card__description">UI/UX</li> 
+                        <li class="card__description">Figma</li> 
+                        <li class="card__description">Adobe XD</li> 
+                        <li class="card__description">Sketch</li> 
+                        <li class="card__description">Photoshop</li> 
+                    </ul>                    
                 </div>
             </div>
         </div>
@@ -59,7 +77,7 @@
     <!-- About -->
     <section id="about">
         <div class="container spacing-wrapper">
-            <h2 data-anime="left">Sobre mim</h2>
+            <h2 data-anime="left">Sobre</h2>
             <img src="/assets/images/eu.webp" alt="" class="about__img" data-anime="left">
             <p class="about__paragraph" data-anime="bottom">Estava no último ano do ensino médio quando percebi meu amor por programação e códigos. Após concluir o ensino básico, ingressei na faculdade de Ensino superior Estácio, onde curso atualmente Análise e Desenvolvimento de Sistemas(2° Periodo).</p>
             <p class="about__paragraph" data-anime="bottom">Atravessando lógica de programação e diversos cursos, amei o Front-End e decidi que daria meu melhor para sempre fazer um ótimo trabalho.</p>
@@ -74,8 +92,17 @@
             <div class="portfolio__images my-slider">
                 <img src="assets/images/express-shop.webp" alt="" class="portfolio__img"> 
                 <img src="assets/images/next-bar.webp" alt="" class="portfolio__img">     
-                <img src="assets/images/soul.webp" alt="" class="portfolio__img">           
+                <img src="assets/images/soul.webp" alt="" class="portfolio__img">
+                <img src="assets/images/heat-page.png" alt="" class="portfolio__img">             
             </div>
+            <h3 class="portfolio__subtitle" data-anime="left">Projetos Independentes</h3>
+            <div class="portfolio__images my-slider">
+                <img src="assets/images/express-shop.webp" alt="" class="portfolio__img"> 
+                <img src="assets/images/next-bar.webp" alt="" class="portfolio__img">     
+                <img src="assets/images/soul.webp" alt="" class="portfolio__img">
+                <img src="assets/images/heat-page.png" alt="" class="portfolio__img">             
+            </div>
+            
         </div>  
     </section>  
     <!-- Contact --> 
@@ -105,33 +132,31 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.my-slider').slick({
-  centerMode: true,
-  slidesToShow: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: false,
-        dots: true,
-        slidesToShow: 1,
-      }
-    }
-  ]
-});
-
-
+                centerMode: true,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                arrows: false,
+                centerMode: false,
+                dots: true,
+                slidesToShow: 1,
+                }
+            }
+            ]
+            });
         }); 
     </script>
 </body>
