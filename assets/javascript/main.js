@@ -99,3 +99,5 @@ function animeScroll() {
 
 
 animeScroll();
+
+//Animate on scroll
